@@ -1,6 +1,6 @@
 {
   "name": "C# (.NET) Project",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",,
+  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
   "customizations": {
     "vscode": {
       "extensions": [

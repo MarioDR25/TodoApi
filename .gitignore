@@ -1,0 +1,34 @@
+## [ General .NET / C# ]
+bin/
+obj/
+publish/
+TestResults/
+
+## [ Visual Studio & VS Code ]
+.vs/
+.vscode/
+# Permitimos la configuración de extensiones para que el profesor vea Scalar/C#
+!.vscode/extensions.json
+*.user
+*.userosscache
+*.sln.docstates
+
+
+## [ Databases & SQLite ]
+# Ignoramos archivos temporales de SQLite que causan bloqueos
+*.db-shm
+*.db-wal
+
+## [ REGLA ESPECIAL PARA TU PROYECTO ]
+# Normalmente los .db se ignoran, pero aquí los FORZAMOS para que el profesor
+# vea tus registros y la base de datos ya creada.
+!*.db
+!*.sqlite
+
+## [ Entity Framework ]
+# Las migraciones son CÓDIGO. Deben subirse sí o sí.
+# Asegúrate de NO tener ninguna línea que diga "Migrations/" aquí.
+
+## [ OS specific ]
+.DS_Store
+Thumbs.db

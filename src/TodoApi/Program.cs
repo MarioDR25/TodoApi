@@ -39,6 +39,7 @@ internal class Program
         app.UseHttpsRedirection();
         app.MapTodoEndpoints();
 
+        app.MapGet("/", () => Results.Redirect("/scalar/v1"));
         using (var scope = app.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();

@@ -2,8 +2,10 @@
 
 Esta es una API para la gestión de tareas (TodoItems), construida con **.NET 9** y diseñada para ejecutarse sin configuraciones adicionales.
 
-## 🚀 Inicio Rápido
+⚠️ IMPORTANTE: Al abrir el proyecto en GitHub Codespaces por primera vez, el sistema ejecutará automáticamente la configuración del entorno (instalación de herramientas como dotnet-ef).
 
+## 🚀 Inicio Rápido
+🚨 Por favor, espera a que la terminal muestre el mensaje "Finished configuring codespace" antes de ejecutar cualquier comando.
 1.  **Ejecutar la aplicación:**
     En la terminal escribe:
     ```bash

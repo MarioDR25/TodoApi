@@ -4,8 +4,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-dotnettools.csharp",
-        "qwtel.sqlite-viewer"
+        "ms-dotnettools.csharp",          // El lenguaje
+        "ms-dotnettools.csdevkit",        // LA QUE TE FALTA (Gestiona la compilación)
+        "ms-dotnettools.vscode-dotnet-runtime", // Asegura que el runtime esté activo
+        "qwtel.sqlite-viewer"             // Para ver tu base de datos
       ]
     }
   },

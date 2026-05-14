@@ -38,13 +38,13 @@ internal class Program
         app.MapScalarApiReference(o =>
         {
             o.Title = "Todo API";
-            o.Theme = ScalarTheme.Moon;
+            
         });
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment()) { }
 
-        app.UseHttpsRedirection();
+        //app.UseHttpsRedirection();
         app.MapTodoEndpoints();
 
         app.MapGet("/", () => Results.Redirect("/scalar/v1"));

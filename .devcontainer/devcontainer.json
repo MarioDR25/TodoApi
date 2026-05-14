@@ -13,5 +13,12 @@
   "postCreateCommand": "dotnet tool install --global dotnet-ef --version 9.0.0 && dotnet restore",
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools"
-  }
+  },
+  "portsAttributes": {
+    "5242": {
+      "label": "Todo API Port",
+      "onAutoForward": "notify",
+      "visibility": "public" 
+    }
+  } 
 }

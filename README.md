@@ -7,10 +7,10 @@ Esta es una API para la gestión de tareas (TodoItems), construida con **.NET 9*
 1.  **Ejecutar la aplicación:**
     En la terminal escribe:
     ```bash
-    dotnet run
+    dotnet run --project src/TodoApi/TodoApi.csproj
     ```
 2.  **Acceder a la Documentación:**
-    Una vez que la aplicación esté corriendo, abre el enlace generado y añade `/scalar/v1` al final de la URL para probar los endpoints con **Scalar**.
+    Haz clic en **"Open in Browser"**. La aplicación te redirigirá automáticamente a la documentación interactiva de **Scalar** para que pruebes los endpoints.
 
 ## 🛠️ Características Técnicas
 

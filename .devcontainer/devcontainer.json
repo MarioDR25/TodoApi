@@ -1,13 +1,13 @@
 {
   "name": "C# (.NET) Project",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-dotnettools.csharp",          // El lenguaje
-        "ms-dotnettools.csdevkit",        // LA QUE TE FALTA (Gestiona la compilación)
+        "ms-dotnettools.csdevkit",        
         "ms-dotnettools.vscode-dotnet-runtime", // Asegura que el runtime esté activo
-        "qwtel.sqlite-viewer"             // Para ver tu base de datos
+        "qwtel.sqlite-viewer"             // Para ver base de datos
       ]
     }
   },

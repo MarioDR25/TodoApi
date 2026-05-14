@@ -41,14 +41,14 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.MapScalarApiReference(options =>
-    {
-        options.WithTitle("Todo API")
-               .WithTheme(ScalarTheme.Mars) // Un tema diferente para asegurar que refresque
-               .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
-        
-        // Esto es lo que me "quedó grande": Scalar necesita saber que NO está en localhost
-        // Al no definir un servidor fijo, Scalar usará la URL actual del navegador.
-    });
+{
+    options.WithTitle("Todo API")
+           .WithTheme(ScalarTheme.DeepSpace)
+           .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+
+    // ESTO ELIMINA EL "HTTP://0.0.0.0" Y USA LA URL DE GITHUB AUTOMÁTICAMENTE
+    options.AddServer(new ScalarServer("/")); 
+});
 }
 
 // 5. Endpoints y Redirección
@@ -62,5 +62,5 @@ using (var scope = app.Services.CreateScope())
     db.Database.Migrate();
 }
 
-// 7. Forzar el puerto desde el código para que no haya pérdida
+
 app.Run("http://0.0.0.0:5242");

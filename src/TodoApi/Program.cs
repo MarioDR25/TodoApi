@@ -24,6 +24,14 @@ internal class Program
             });
         });
 
+        builder.Services.AddCors(options =>
+        {
+            options.AddDefaultPolicy(policy =>
+            {
+                policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+            });
+        });
+
 
         var app = builder.Build();
         app.MapOpenApi();
@@ -46,6 +54,7 @@ internal class Program
             db.Database.Migrate();
         }
 
+        app.UseCors();
         app.Run();
     }
 }
